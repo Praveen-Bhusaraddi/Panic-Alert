@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="83dp"
+        android:text="Panic Alert"
+        android:gravity="center_horizontal"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:id="@+id/panic"/>
+
+    <ImageView
+        android:id="@+id/logout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/log_out"
+        android:clickable="true"
+        android:layout_marginStart="368dp"/>
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter phone number"
+        android:id="@+id/editTextContact"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:padding="15sp"
+        android:maxLength="10"
+        android:inputType="phone"
+        android:layout_below="@id/panic"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/rect"/>
+
+    <ListView
+        android:id="@+id/listViewContacts"
+        android:layout_width="match_parent"
+        android:layout_below="@id/add_btn"
+        android:layout_marginTop="10dp"
+        android:layout_height="275dp" />
+
+
+    <Button
+        android:id="@+id/add_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextContact"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="10dp"
+        android:clickable="true"
+        android:backgroundTint="@color/black"
+        android:text="Add"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/delete_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:layout_below="@id/editTextContact"
+        android:layout_marginStart="240dp"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@color/black"
+        android:text="Delete"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/listViewContacts">
+
+        <ImageView
+            android:id="@+id/get_location_btn"
+            android:layout_width="180dp"
+            android:layout_height="160dp"
+            android:layout_marginStart="120dp"
+            android:layout_marginTop="15dp"
+            android:clickable="true"
+            android:src="@drawable/panic" />
+
+    </LinearLayout>
+
+</RelativeLayout>

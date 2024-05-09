@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "964112547246",
+    "project_id": "panic-alert-f533d",
+    "storage_bucket": "panic-alert-f533d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:964112547246:android:14712a3d4c7145ccf99c3f",
+        "android_client_info": {
+          "package_name": "com.example.panicalert"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCd_gjfK-eNq5ox4UYCJb5Ixv3jcHPwJ-M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
